@@ -74,7 +74,7 @@ const Projects = () => {
                 <span className={project.statusClass}>{project.status}</span>
               </p>
               <p>
-                <strong>👥 {project.team}</strong>
+                <strong>👤 {project.team}</strong>
               </p>
               <p>{project.description}</p>
               <div className="tech-stack">
