@@ -1,0 +1,50 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: gray;
+  }
+  
+  .connect-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, purple, pink);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .connect-button:hover {
+    opacity: 0.8;
+  }
+  .person-icon {
+    font-size: 1.5rem; /* Adjust size */
+    margin-right: 10px; /* Add spacing */
+    color: #ff4081; /* Match theme */
+    vertical-align: middle;
+  }

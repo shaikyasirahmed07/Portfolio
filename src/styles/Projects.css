@@ -1,0 +1,149 @@
+/* General Styles */
+.projects-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #121212;
+  color: white;
+}
+
+/* Title and Subtitle */
+.projects-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4081;
+}
+
+.projects-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #b0b0b0;
+}
+
+/* Projects Container */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Project Card */
+.project-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+/* Gradient Border on Hover */
+.project-card:hover {
+  transform: translateY(-5px);
+  border-image: linear-gradient(45deg, #ff4081, #ffeb3b, #4caf50);
+  border-image-slice: 1;
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Project Text Content */
+.project-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.project-content strong {
+  font-weight: bold;
+}
+
+/* Status Styling */
+.completed {
+  color: #4caf50;
+}
+
+.ongoing {
+  color: #ffeb3b;
+}
+
+/* Tech Stack */
+.tech-stack {
+  margin-top: 10px;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: #333;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.view-project,
+.source-code {
+  background: #ff4081;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  font-size: 0.9rem;
+}
+
+.source-code {
+  background: #444;
+}
+
+.view-project:hover {
+  background: #e91e63;
+}
+
+.source-code:hover {
+  background: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

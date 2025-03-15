@@ -1,0 +1,119 @@
+.home-container {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background-color: #111;
+}
+
+.profile {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.title span {
+  color: #d81b60;
+}
+
+.subtitle {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.connect-btn,
+.resume-btn {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.connect-btn {
+  background: linear-gradient(to right, purple, pink);
+  color: white;
+}
+.connect-btn:hover {
+  background: linear-gradient(to right, rgb(38, 0, 255), rgb(117, 221, 255));
+  transform: scale(1.05);
+}
+
+.resume-btn {
+  background: linear-gradient(to right, rgb(38, 0, 255), rgb(117, 221, 255));
+  color: black;
+}
+.resume-btn:hover {
+  background: linear-gradient(to right, purple, pink);
+  transform: scale(1.05);
+}
+
+.services-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #ff7b00;
+}
+
+.services-desc {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category {
+  width: 300px;
+  margin: 20px;
+}
+
+.category h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icons img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+}
